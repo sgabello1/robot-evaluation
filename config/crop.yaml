@@ -1,0 +1,7 @@
+window:
+  x: 120
+  y: 150
+changed_origin:
+  x: 28
+  y: -50
+waypoints_file: "/media/edo/My Passport/husky nav test/Daniele/250419-husky-apollo-complex-map/map.txt"

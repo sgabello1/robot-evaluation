@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+f= open("/home/edo/Desktop/guru99.txt","w+")
+for i in range(10):
+     f.write("This is line %d\r\n" % (i+1))
+f.close()
+print "mm mm suka "

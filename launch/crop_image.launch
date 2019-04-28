@@ -1,0 +1,10 @@
+<launch>
+  
+  <arg name="map_file" default="/media/edo/My\ Passport/husky\ nav\ test/Daniele/250419-husky-apollo-complex-map/my_map.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+  
+  <node name="crop_image" pkg="evalu_navi" type="crop_image.py" output="screen">
+    <rosparam command="load" file="$(find evalu_navi)/config/conf.yaml"/>
+  </node>
+
+</launch>

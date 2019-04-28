@@ -1,0 +1,14 @@
+<launch>
+   
+  <arg name="map_file" default="/media/edo/My\ Passport/husky\ nav\ test/Daniele/250419-husky-apollo-complex-map/my_map.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <arg name="bag_file_1" default="/media/edo/My\ Passport/husky\ nav\ test/Daniele/250419-husky-apollo-complex-map/complex-map_2019-04-25-17-00-51.bag"/>
+
+<arg name="bag_file_2" default="/media/edo/My\ Passport/husky\ nav\ test/Daniele/250419-husky-apollo-complex-map/complex-map_2019-04-25-17-00-51.bag"/>
+  
+  <node name="pose_measured_loader" pkg="evalu_navi" type="pose_measured_loader.py" output="screen" args="$(arg bag_file_1) $(arg bag_file_2)" >
+    <rosparam command="load" file="$(find evalu_navi)/config/conf.yaml"/>
+  </node>
+
+</launch>

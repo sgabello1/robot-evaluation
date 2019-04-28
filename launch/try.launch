@@ -1,0 +1,6 @@
+<launch>
+  
+  <node name="write" pkg="evalu_navi" type="write.py" output="screen">
+  </node>
+
+</launch>

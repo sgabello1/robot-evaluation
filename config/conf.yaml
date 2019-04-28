@@ -1,0 +1,11 @@
+window:
+  x: 120
+  y: 150
+changed_origin:
+  x: 28
+  y: -50
+path_to_save_wp: "/media/edo/My Passport/husky nav test/Daniele/250419-husky-apollo-complex-map/wp-in-map-coords.txt"
+map_path: "/media/edo/My\ Passport/husky\ nav\ test/Daniele/250419-husky-apollo-complex-map/waypoints.txt"
+wp_dump_file: "/media/edo/My Passport/husky nav test/Daniele/250419-husky-apollo-complex-map/wp"
+robot: husky
+
